@@ -1,0 +1,264 @@
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #40457C;
+    color: #6D6280;
+    padding: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* BARRA DE NAVEGAÇÃO */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #28264b7e;
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid #4E5172;
+    padding: 12px 20px;
+    z-index: 100;
+}
+
+.nav-content {
+    max-width: 820px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    /* CENTRALIZA A PÁGINA */
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.banner-img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    color: #FBCBC9;
+    font-size: 100px;
+}
+
+.tagline {
+    color: #FBCBC9;
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+/* BOTÃO DO SPOTIFY */
+.btn-spotify {
+    display: inline-block;
+    background-color: #1db954;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 15px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-spotify:hover {
+    background-color: #1ed760;
+    transform: scale(1.04);
+}
+
+/* SEÇÕES */
+.section {
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #6D6280;
+    padding-bottom: 5px;
+}
+
+/* CARDS */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap; /* faz a linha quebrar se a tela for menor */
+    gap: 15px; /* espaço entre os cards */
+    justify-content: center;
+}
+
+.card {
+    background-color: #28264B;
+    border: 1px solid #4E5172;
+    border-radius: 8px;
+    padding: 15px;
+    width: 170px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #FBCBC9;
+}
+
+.card-img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-info {
+    padding: 12px 10px;
+}
+
+.card-info h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #FBCBC9;
+}
+
+.card-info p {
+    font-size: 15px;
+}
+
+/* CARDS DE MÚSICAS */
+.music-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.music-card {
+    background-color: #FBCBC9;
+    border: 1px solid #40457C;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 80%;
+}
+
+.music-card:hover {
+    border-color: #1db954;
+}
+
+.music-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #28264B;
+    padding-bottom: 8px;
+}
+
+.music-rank {
+    font-size: 20px;
+    font-weight: bold;
+    color: #28264B;
+    padding-right: 8px;
+}
+
+.music-details h3 {
+    font-size: 16px;
+    color: #28264B;
+}
+
+.music-stats {
+    font-size: 14px;
+    color: #1db954;
+}
+
+.music-card iframe {
+    border-radius: 8px;
+    display: block;
+}
+
+/* FORMULARIO */
+.fan-form {
+    background-color: #4e51724f;
+    border-radius: 10px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #FBCBC9;
+}
+
+.form-group input, .form-group select {
+    border: 1px solid #28264B;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 10px 12px;
+    color: #28264B;
+    font-size: 15px;
+    outline: none;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #FBCBC9;
+}
+
+.form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    color: #FBCBC9;
+}
+
+.form-checkbox input[type="checkbox"] {
+    accent-color: #28264B;
+    cursor: pointer;
+}
+
+.btn-submit {
+    background-color: #FBCBC9;
+    color: #28264B;
+    border: none;
+    border-radius: 6px;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 250px;
+}
+
+.btn-submit:hover {
+    background-color: #fdb6b4;
+    transform: translateY(-2px);
+}
+
+.btn-submit:active {
+    transform: translateY(0);
+}
